@@ -4,6 +4,11 @@ version = "0.1.0"
 description = "Assert json schema, also provide $ref:relative_file wrapper to $ref:file:{absolute_path}"
 authors = ["Bastien Germond <bastien.germond@epita.fr>"]
 license = "MIT"
+repository = "https://github.com/BastienGermond/assert-json-schema"
+keywords = [ "jsonschema", "relative", "json" ]
+classifiers = [
+    "Intended Audience :: Developers",
+]
 
 [tool.poetry.dependencies]
 python = "^3.7"
