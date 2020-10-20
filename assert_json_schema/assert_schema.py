@@ -23,7 +23,7 @@ def assert_schema(json_dict: dict, schema_name: str, path='json-schema') -> None
         schema_loaded = json.load(schema)
         convert_relative_ref_to_absolute(schema_loaded, schema_path)
         # Validate json
-        validate(instance=json_dump, schema=schema_loaded)
+        validate(instance=json_dict, schema=schema_loaded)
     except FileNotFoundError as error:
         raise Exception(f"Couldn't load json-schema at: {schema_path}") from error
     finally:
