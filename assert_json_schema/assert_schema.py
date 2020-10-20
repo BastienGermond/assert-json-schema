@@ -42,6 +42,7 @@ def __convert_to_absolute(relative_path_uri, relative_root, uri_scheme):
     exploded = path.split('#')
     # This should (if this uri is valid) be 1 or 2
     jpointer = f"#{exploded[1]}" if len(exploded) == 2 else ''
+    path = exploded[0]
 
     # Ensure they are Path instance
     path = Path(path)

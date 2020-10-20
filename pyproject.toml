@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "assert-json-schema"
-version = "0.1.0"
+version = "0.1.2"
 description = "Assert json schema, also provide $ref:relative_file wrapper to $ref:file:{absolute_path}"
 authors = ["Bastien Germond <bastien.germond@epita.fr>"]
 license = "MIT"
